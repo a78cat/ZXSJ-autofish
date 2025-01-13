@@ -8,22 +8,15 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-    QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
-from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon,
-    QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QGroupBox, QHBoxLayout, QLabel,
-    QLineEdit, QPushButton, QSizePolicy, QVBoxLayout,
-    QWidget)
+from PySide6.QtCore import (QCoreApplication, QMetaObject)
+from PySide6.QtWidgets import (QGroupBox, QHBoxLayout, QLabel,
+                               QLineEdit, QPushButton, QVBoxLayout)
 
 class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(176, 136)
+        Form.resize(236, 136)
         self.verticalLayout_2 = QVBoxLayout(Form)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.groupBox = QGroupBox(Form)
@@ -88,10 +81,10 @@ class Ui_Form(object):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.groupBox.setTitle(QCoreApplication.translate("Form", u"\u65f6\u95f4\u8c03\u6574", None))
         self.label_presstime.setText(QCoreApplication.translate("Form", u"\u6309\u4e0b\u65f6\u95f4", None))
-        self.lineEdit_presstime.setText(QCoreApplication.translate("Form", u"1", None))
+        self.lineEdit_presstime.setText(QCoreApplication.translate("Form", u"0.5", None))
         self.label_releasetime.setText(QCoreApplication.translate("Form", u"\u677e\u5f00\u65f6\u95f4", None))
         self.lineEdit_releasetime.setInputMask("")
-        self.lineEdit_releasetime.setText(QCoreApplication.translate("Form", u"1", None))
+        self.lineEdit_releasetime.setText(QCoreApplication.translate("Form", u"0.3", None))
         self.pushButton_start.setText(QCoreApplication.translate("Form", u"\u5f00\u59cb", None))
         self.pushButton_stop.setText(QCoreApplication.translate("Form", u"\u505c\u6b62", None))
     # retranslateUi

@@ -1,3 +1,6 @@
 .idea
 venv
 convert_ui_to_py.py
+build
+dist
+main.spec

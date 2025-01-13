@@ -63,11 +63,15 @@ class MainApp(QWidget, Ui_Form):
 
     def slot_start(self):
         print('resume')
+        self.lineEdit_presstime.setDisabled(True)
+        self.lineEdit_releasetime.setDisabled(True)
         self.thread.resume()
 
     def slot_pause(self):
         print('pause')
         self.thread.pause()
+        self.lineEdit_presstime.setDisabled(False)
+        self.lineEdit_releasetime.setDisabled(False)
 
     def closeEvent(self, a0):
         self.thread.pause()
